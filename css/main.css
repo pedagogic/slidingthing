@@ -25,11 +25,11 @@ a img { /* this selector removes the default blue border displayed in some brows
 /* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
 a:link {
 	color:#414958;
-	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+	text-decoration: none; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
 }
 a:visited {
 	color: #4E5869;
-	text-decoration: underline;
+	text-decoration: none;
 }
 a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
 	text-decoration: none;
@@ -76,6 +76,7 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 
 #top{
 	position:fixed;
+	z-index:10;
 	top:0px;
 	height:44px;
 	width:100%;
@@ -83,11 +84,24 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 }
 #title{
 	position:fixed;
+	z-index:11;
 	top: 10px;
 	height:44px;
 	width:100%;	
 }
-#title h1{font-size:14px; color:#FFF; text-align:center;}
+#exit{
+	position:fixed;
+	z-index:12;
+	top:0px;
+	height:44px;
+	width:51px;
+	background:url(../images/exit.png);
+	background-repeat:no-repeat;
+	background-position:0px 0px;
+}
+#exit:hover, #exit:focus{background-position:0px -44px;}
+#exit:active{background-position:0px -88px;}
+#title h1{font-size:18px; color:#FFF; text-align:center;}
 	
 
 #middle{
@@ -97,13 +111,15 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 	margin:0 auto;
 }
 
-#question h1{font-size:14px; color:#FFF; padding-top:8px; padding-bottom:14px;}
-#middle p{padding:14px; font-size:14px;}
+#question h1{font-size:18px; color:#FFF; padding-top:14px; padding-bottom:22px;}
+#middle p{padding:18px; font-size:18px;}
 #image-holder{text-align:center;margin-top:50px;}
 #option1, #option2, #option3, #option4{background-color:#CCC; margin-bottom:1px; -webkit-border-radius: .1em; border-radius: .1em;}
+#dummy{height:44px;}
 #option1:hover, #option2:hover, #option3:hover, #option4:hover{background-color:#999;}
 #option1:focus, #option2:focus, #option3:focus, #option4:focus{background-color:#999;}
 #option1:active, #option2:active, #option3:active, #option4:active{background-color:#666;}
+#trans{position:fixed; top:44px; height:100%; width:100%; background-color:#96C; display:none;}
 
 
 
@@ -115,17 +131,7 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 	background-color:#252525;
 }
 
-#exit{
-	position:fixed;
-	top:0px;
-	height:44px;
-	width:51px;
-	background:url(../images/exit.png);
-	background-repeat:no-repeat;
-	background-position:0px 0px;
-}
-#exit:hover, #exit:focus{background-position:0px -44px;}
-#exit:active{background-position:0px -88px;}
+
 
 #back{
 	float:left;
@@ -139,7 +145,7 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 #back:active{background-position:0px -88px;}
 
 #next{
-	float:left;
+	float:right;
 	height:44px;
 	width:51px;
 	background:url(../images/right.png);
