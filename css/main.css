@@ -109,6 +109,8 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 	height:100%;
 	width:98%;
 	margin:0 auto;
+	overflow: scroll;
+    -webkit-overflow-scrolling: touch; /*to make it smooth as native*/
 }
 
 #question h1{font-size:18px; color:#FFF; padding-top:14px; padding-bottom:22px;}
