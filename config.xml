@@ -9,6 +9,6 @@
         <content src="index.html" />
         <access origin="*" />
         <preference name="Fullscreen" value="true" />
-		<preference name="DisallowOverscroll" value="true"/>
+		<preference name="DisallowOverscroll" value="false"/>
 		<preference name="WebViewBounce" value="false" />
 </widget>
