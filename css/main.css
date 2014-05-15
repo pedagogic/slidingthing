@@ -110,12 +110,11 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 	left:1%;
 	height:100%;
 	width:98%;
+	overflow: auto;
 }
 
 #scrollable{
 	position:relative;
-	overflow: scroll;
-    -webkit-overflow-scrolling: touch;
 }
 
 #question h1{font-size:18px; color:#FFF; padding-top:14px; padding-bottom:22px;}
