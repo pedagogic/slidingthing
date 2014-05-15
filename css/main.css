@@ -105,10 +105,11 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 	
 
 #middle{
-	position:relative;
-	height:70%;
+	position:fixed;
+	top:44px;
+	left:1%;
+	height:80%;
 	width:98%;
-	margin:0 auto;
 	overflow: auto;
     -webkit-overflow-scrolling: touch; /*to make it smooth as native*/
 }
