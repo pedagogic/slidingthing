@@ -1,0 +1,14 @@
+<widget id="com.example.hello" version="0.0.1">
+        <name>Multi Choosy</name>
+        <description>
+            A sample application that responds allows user to choose one out of many options.
+        </description>
+        <author email="isaac@pedagogic.co.za" href="http://pedagogic.co.za">
+            Pedagogic Software
+        </author>
+        <content src="index.html" />
+        <access origin="*" />
+        <preference name="Fullscreen" value="true" />
+		<preference name="disallowOverscroll" value="true" />
+		<preference name="webviewbounce" value="false" />
+</widget>
